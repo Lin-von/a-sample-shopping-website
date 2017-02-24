@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - maindb_10312@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="maindb_10312">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="news"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="pingtai"/>
+    <schema id="7" name="test"/>
+    <table id="8" parent="1" name="agency_10312"/>
+    <table id="9" parent="1" name="buyrcd_10312"/>
+    <table id="10" parent="1" name="cart_10312"/>
+    <table id="11" parent="1" name="in_detail_10312"/>
+    <table id="12" parent="1" name="in_main_10312"/>
+    <table id="13" parent="1" name="item_10312"/>
+    <table id="14" parent="1" name="out_detail_10312"/>
+    <table id="15" parent="1" name="out_main_10312"/>
+    <table id="16" parent="1" name="person_10312"/>
+    <table id="17" parent="1" name="user_10312"/>
+    <column id="18" parent="8" name="aid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="19" parent="8" name="name">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="20" parent="8" name="tel">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="21" parent="8" name="address">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="22" parent="8" name="payin">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="23" parent="8" name="PRIMARY">
+      <columns>aid</columns>
+      <primary>1</primary>
+    </key>
+    <column id="24" parent="9" name="bid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="25" parent="9" name="uname">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="26" parent="9" name="gid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="27" parent="9" name="count">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="28" parent="9" name="date">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="29" parent="9" name="cost">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="30" parent="9" name="PRIMARY">
+      <columns>bid</columns>
+      <primary>1</primary>
+    </key>
+    <column id="31" parent="10" name="cid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="32" parent="10" name="uname">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="33" parent="10" name="gid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="34" parent="10" name="count">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="35" parent="10" name="cost">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="36" parent="10" name="PRIMARY">
+      <columns>cid</columns>
+      <primary>1</primary>
+    </key>
+    <column id="37" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="38" parent="11" name="gid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="39" parent="11" name="count">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="40" parent="11" name="inid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="41" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="42" parent="12" name="inid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="43" parent="12" name="from">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="44" parent="12" name="date">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="45" parent="12" name="cost">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="46" parent="12" name="PRIMARY">
+      <columns>inid</columns>
+      <primary>1</primary>
+    </key>
+    <column id="47" parent="13" name="gid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="48" parent="13" name="name">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="49" parent="13" name="price">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="50" parent="13" name="brand">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="51" parent="13" name="size">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="52" parent="13" name="series">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="53" parent="13" name="remain">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="54" parent="13" name="PRIMARY">
+      <columns>gid</columns>
+      <primary>1</primary>
+    </key>
+    <column id="55" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="56" parent="14" name="gid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="57" parent="14" name="count">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="58" parent="14" name="outid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="59" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="60" parent="15" name="outid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="61" parent="15" name="to">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="62" parent="15" name="date">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="63" parent="15" name="cost">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="64" parent="15" name="PRIMARY">
+      <columns>outid</columns>
+      <primary>1</primary>
+    </key>
+    <column id="65" parent="16" name="pid">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="66" parent="16" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="67" parent="16" name="tel">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="68" parent="16" name="email">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="69" parent="16" name="idcard">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="70" parent="16" name="position">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <key id="71" parent="16" name="PRIMARY">
+      <columns>pid</columns>
+      <primary>1</primary>
+    </key>
+    <column id="72" parent="17" name="uid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="73" parent="17" name="name">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="74" parent="17" name="password">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="75" parent="17" name="tel">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="76" parent="17" name="email">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="77" parent="17" name="level">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="78" parent="17" name="PRIMARY">
+      <columns>uid</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
